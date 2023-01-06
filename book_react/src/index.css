@@ -1,0 +1,54 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+background-color:#f1f5f8;
+color:#222;
+}
+
+.book{
+  background:rgb(255, 212, 212);
+  border-radius: 1rem;
+  padding:1rem 2rem;
+}
+.book h2{
+margin-top:0.5rem;
+text-align: center;
+font-size: 1.2rem;
+}
+img{
+  width:350px;
+}
+.booklist{
+  width:90vw;
+  max-width:1170px;
+  margin:5rem auto;
+  display:grid;
+  gap:2rem;
+}
+@media screen and (min-width:768px){
+  .booklist{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+.book h3{
+  color:#617d98;
+  font-size:1rem;
+  margin-top:0.25rem;
+  text-align: center;
+}
+
+.btn{
+  margin:10px auto;
+  text-align: center;
+  
+}
+.btn button{
+  padding:12px;
+  background-color:green;
+  color:#fff;
+}

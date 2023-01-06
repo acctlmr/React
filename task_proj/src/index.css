@@ -1,0 +1,109 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.bgprimary{
+  background-color:rgb(56, 89, 146);
+}
+.text-center{
+  text-align: center;
+}
+.text-light{
+  color:rgb(255, 249, 249);
+}
+.flex-center{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+.--p{
+  padding:1rem;
+}
+.card{
+  border:1px solid transparent;
+  border-radius:5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  overflow:hidden;
+}
+.bg-light {
+  background-color:antiquewhite;
+}
+.width500{
+  width:500px;
+}
+form.form input{
+  width:73%;
+
+}
+
+.form-control{
+  font-size:1.3rem;
+  font-weight: 300;
+}
+.form-control>*{
+  margin:5px 0;
+}
+.form-control input{
+  font-size: 1rem;
+  font-weight: 300;
+  padding:8px 1rem;
+  border:1px solid #777;
+  border-radius: 3px;
+}
+.form-control label{
+  font-size: 1rem;
+  font-weight: 400;
+  min-width: 7rem;
+  color:#000;
+  margin-right: 1rem;
+}
+.btn{
+  font-size: 1rem;
+  font-weight: 400;
+  padding:6px 4px;
+  margin:0 5px 0 0;
+  border:1px solid transparent;
+  border-radius: 3px;
+  cursor:pointer;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+}
+.btn-success{
+  background-color:green;
+  color:#fff;
+}
+.btn-block{
+  width:100%;
+}
+.task{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  background-color:rgb(245, 242, 242);
+  padding:1rem;
+  margin:1rem;
+  border:1px solid transparent;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(255,255,255,0.7);
+  overflow:hidden;
+}
+.complete{
+  position:relative;
+  background-color:rgb(154, 255, 179);
+  border-left:5px solid crimson;
+}
+.complete::after{
+  content:"Completed";
+  position:absolute;
+  right:1rem;
+  bottom:3px;
+  background-color:crimson;
+  color:#fff;
+  padding:2px;
+  border-radius: 3px;
+}

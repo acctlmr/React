@@ -1,0 +1,25 @@
+*{
+    text-align:center;
+    margin: 30px auto;
+}
+.fcomponent{
+    background:green;
+    color:white;
+    width:550px;
+}
+.para1{
+    background: rgb(60, 148, 255);
+    color: white;
+    width: 550px;  
+}
+.d1{
+    border: 5px solid coral;
+    width:750px;
+}
+
+h2{
+    background: rgb(255, 206, 44);
+    color: white;
+    width: 550px;
+    
+}

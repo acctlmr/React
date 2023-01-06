@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Patrick+Hand&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+  --font-family:'Poppins',
+    sans-serif;
+
+  --dark-blue:#0a0d2c;
+  --light-blue:#6c77dc;
+
+  --color-grey:#eae6eb;
+  --color-white:#fff;
+  --color-dark:#333;
+
+  --box-shadow:0 5px 15px rgba(0,0,0,0.3);
+
+  --color-purple:#660099;
+  --color-orange:#ff9f25;
+
+  --color-primary:#007bff;
+  --color-success:#299355;
+  
+
+}
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color:#222;
+  font-family: 'Poppins', sans-serif;
+}

@@ -1,0 +1,41 @@
+nav{
+    width:100vw;
+    height:5rem;
+    display:grid;
+    place-items:center;
+    background-color:rgb(98, 177, 255);
+    position:fixed;
+    top:0;
+    left:0;
+    box-shadow:0 1rem 1.2rem 1rem rgba(0,0,0,0.2);
+    transition:var(--transition);
+    z-index:9;
+}
+.nav_container{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.nav_menu{
+    display:flex;
+    gap:3.5rem;
+}
+.nav_menu a{
+    color:white;
+    font-size:1.2rem;
+}
+.nav_menu a:hover{
+    background-color:white;
+    color:black;
+    padding:0.8rem;
+}
+
+@media screen and (max-width:1024px)
+{
+    .nav_menu{
+        display:none;
+    }
+    nav{
+        display:none;
+    }
+}

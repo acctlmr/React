@@ -1,0 +1,37 @@
+*{
+   
+    color:black;
+    text-align: center;
+}
+
+.veg{
+    margin:30px auto;
+    border:5px solid orange;
+    background-color:green;
+    color:white;
+    width:650px;
+    padding:10px;
+  
+
+}
+
+.vegName{
+    padding:12px;
+    margin:8px auto;
+    background-color:rgb(107, 107, 255);
+    width:250px;
+}
+
+.vegPrice{
+    padding: 12px;
+    margin: 8px auto;
+    background-color: rgb(255, 0, 225);
+    width: 250px;
+}
+
+.btn{
+    width:300px;
+   
+    background-color:black;
+    color:white;
+}

@@ -1,0 +1,21 @@
+.center{
+    min-height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size:34px;
+    color:#fff;
+    line-height:1.4;
+    text-align: center;
+    padding-top:20px;
+}
+
+.profileContainer{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+}

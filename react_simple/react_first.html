@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>React First Example</title>
+  </head>
+  <body>
+    <h1>My own website</h1>
+
+
+    <div id="banner"></div>
+
+    <footer>
+      <p>Footer</p>
+    </footer>
+
+    <script type="text/babel">
+        /*
+
+        React is a front end Javascript framework which is called Javascript library created by Facebook. 
+
+        This framework or library creates a VIrtual DOM in memory,where it does all the necessary manipulating before making the changes in the DOM browser. 
+
+        React finds out what changes is needed, and it changes only what needs to be changed. 
+
+
+          What is JSX?
+
+          Any code which appears like HTML and is written inside Javascript is JSX code.
+
+          JSX allows is to write HTML elements in Javascript and place them in a DOM. 
+          It converts HTML tags into react elements. 
+
+          With JSX we can write expressions inside {} curly braces. This
+          The xpressions can be property or any valid Javascript expression, JSX will execute and return the result.
+
+        */
+      const Banner = () => {
+        const title = "Welcome to my Website!";
+        const subtitle = "This is a website for learning react";
+        const address = "www.mysite.com";
+        return (
+          <div>
+            <h2>{title.toUpperCase()}</h2>
+            <p>{subtitle}</p>
+            <a href={address}>Visit here</a>
+            <p>Today's date is: {new Date().toDateString()}</p>
+            <p>Banner</p>
+          </div>
+        );
+      };
+
+      //render the component to the dom
+      //ReactDOM.render(<Banner />, document.getElementById("banner"));
+      ReactDOM.render(<p>My Page</p>, document.getElementById("banner"));
+    </script>
+  </body>
+</html>

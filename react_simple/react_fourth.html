@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>React fourth example</title>
+  </head>
+  <body>
+    <div id="banner"></div>
+
+    <script type="text/babel">
+      const ListItems = () => {
+        let headers = <h1>List Components</h1>;
+        let list_Items = (
+          <ul>
+            <li>Noodles</li>
+            <li>Maggi</li>
+            <li>Chowmein</li>
+          </ul>
+        );
+        return (
+          <div>
+            {headers}
+
+            {list_Items}
+          </div>
+        );
+      };
+
+      ReactDOM.render(<ListItems />, document.getElementById("banner"));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+section{
+  width:100%;
+  padding:8rem 0;
+}
+
+section.main{
+  background-color:rgb(224, 236, 241);
+}
+
+.container{
+  max-width:1000px;
+  margin:0 auto;
+  padding:0 20px;
+}
+
+.centerall{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  width:100%;
+  margin:auto;
+  text-align:center;
+}
+
+.toggle-btn{
+  width:55px;
+  height:15px;
+  background-color:#ccc;
+  display:flex;
+  border-radius:50px;
+  align-items:center;
+  justify-content: space-between;
+  padding:5px;
+  position: relative;
+  cursor:pointer;
+}
+.toggled{
+  background-color:green;
+}
+
+.ball{
+position:absolute;
+width:20px;
+height:20px;
+background-color:#fff;
+top:2px;
+left:2px;
+border-radius: 50%;
+}
+.move{
+  transform:translateX(39px);
+}
+.sub-plans{
+  width:100%;
+  margin:0 auto;
+  display:flex;
+  justify-content:center;
+  
+}
+
+.--line{
+  position:relative;
+}
+.--line::after{
+  content:"";
+  position:absolute;
+  width:5rem;
+  height:3px;
+  left:50%;
+  bottom:-5px;
+  transform:translateX(-50%);
+  margin-bottom:1rem;
+  
+  background-color:brown;
+}
+.mx-2{
+  margin:0 2rem;
+}
+.my-2{
+  margin:2rem 0;
+}
+
+
+.--card{
+  border:1px solid transparent;
+  border-radius:5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  overflow:hidden;
+}
+
+.price-box{
+  width:30rem;
+  text-align: center;
+  background-color:#fff;
+  padding-bottom:3rem;
+  margin:2rem 1.5rem;
+}
+.price-box h4 span{
+  font-size: 1.6rem;
+}
+.price-box h4 span:nth-child(2){
+  font-size: 3rem;
+  margin-bottom:3rem;
+
+}
+.price-box ul li{
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding:1.2rem 0;
+  border-top:1px solid grey;
+
+}
+.price-box ul li:last-child{
+  border-bottom:1px solid grey;
+}
+
+.price-box ul {
+  list-style: none;
+  margin-bottom: 3rem;
+}
+
+.price-box button{
+  font-size: 1.3rem;
+  text-decoration: none;
+  background-color:green;
+  padding:1.2rem 3rem;
+  color:#fff;
+  border:1px solid transparent;
+  border-radius: 5px;
+  margin-bottom:3rem;
+  cursor:pointer;
+}
+.price-box button:hover{
+  font-size: 1.5rem;
+}
+
+.theme1{
+  background:linear-gradient(to right bottom,rgba(95, 199, 95,1),rgba(45, 91, 45,1));
+}
+.theme2 {
+  background: linear-gradient(to right bottom, rgba(223, 212, 91,1), rgba(150, 94, 34,1));
+}
+.theme3 {
+  background: linear-gradient(to right bottom, rgba(255, 87, 224,1), rgba(83, 17, 86,1));
+}
+
+
+@media screen and (max-width:900px) {
+  .price-box {
+    width: 35rem;
+    margin: 2rem auto;
+  }
+}
+@media screen and (max-width:600px){
+  .sub-plans{
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
